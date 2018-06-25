@@ -1,0 +1,22 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1908/eureka/
+server:
+  port: 1909
+spring:
+  application:
+    name: core-service-provider
+
+  jpa:
+      database: POSTGRESQL
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+
+  datasource:
+        platform: postgres
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+        password: gao826550

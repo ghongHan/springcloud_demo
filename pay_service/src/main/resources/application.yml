@@ -1,0 +1,9 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1908/eureka/
+server:
+  port: 1910
+spring:
+  application:
+    name: pay-service-provider
